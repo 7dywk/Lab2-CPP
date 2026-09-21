@@ -1,7 +1,7 @@
 
 
 #include <iostream>
-#include <cmath> // Бібліотека для математичних функцій (sin, cos, tan)
+#include <cmath>
 
 using namespace std;
 
@@ -16,13 +16,12 @@ int main()
     cout << "Введіть значення кута alpha (у радіанах): ";
     cin >> alpha;
 
-    // 3. Обчислення z1 за першою формулою
-    // Для зручності читання розіб'ємо дріб на чисельник та знаменник
+    // 3. Обчислення z1
     double numerator = sin(alpha) + sin(5 * alpha) - sin(3 * alpha);
     double denominator = cos(alpha) - cos(3 * alpha) + cos(5 * alpha);
     z1 = numerator / denominator;
 
-    // 4. Обчислення z2 за другою формулою (tg 3a)
+    // 4. Обчислення z2
     z2 = tan(3 * alpha);
 
     // 5. Виведення результатів
@@ -30,7 +29,7 @@ int main()
     cout << "z1 = " << z1 << endl;
     cout << "z2 = " << z2 << endl;
 
-    return 0; // Успішне завершення програми
+    return 0; 
 }
 
 
